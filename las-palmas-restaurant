@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Las Palmas Mexican Restaurant</title>
+<style>
+  /* Reset & basics */
+  * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: #fff8f0;
+    color: #3b2f2f;
+    line-height: 1.6;
+  }
+  a {
+    color: #d32f2f;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  header {
+    background: #d32f2f;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  nav {
+    margin-top: 0.5rem;
+  }
+  nav a {
+    margin: 0 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .hero {
+    background: url('https://images.unsplash.com/photo-1541592106381-77a4b93ec0bc?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    background: #f44336;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.75rem;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  .btn:hover {
+    background: #b71c1c;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  h3 {
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #b71c1c;
+  }
+  .specials-list, .reviews-list {
+    list-style: none;
+  }
+  .specials-list li {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+  .reviews-list li {
+    background: #ffe6e6;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  footer {
+    background: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+  .contact-info {
+    margin-bottom: 1rem;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Las Palmas Mexican Restaurant</h1>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About Us</a>
+    <a href="#order">Order Online</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Taste the Best Mexican Food in Raleigh!</h2>
+  <div>
+    <button class="btn" onclick="window.location.href='#order'">Order Online</button>
+    <button class="btn" onclick="window.location.href='#menu'">View Menu</button>
+    <button class="btn" onclick="window.location.href='#contact'">Make a Reservation</button>
+  </div>
+</section>
+
+<main>
+  <section id="menu">
+    <h3>This Week’s Specials</h3>
+    <ul class="specials-list">
+      <li><strong>Carne Asada Tacos</strong> – $9.99</li>
+      <li><strong>Margarita Pitcher</strong> – $14.99</li>
+      <li><strong>Churros with Chocolate Sauce</strong> – $5.99</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h3>Why Choose Us?</h3>
+    <p>At Las Palmas, we serve authentic Mexican recipes passed down for generations, made fresh daily with the best ingredients. Our friendly atmosphere is perfect for families and friends to enjoy delicious meals and great times.</p>
+  </section>
+
+  <section id="reviews">
+    <h3>Customer Reviews</h3>
+    <ul class="reviews-list">
+      <li>⭐⭐⭐⭐⭐ "Best Mexican food I've had in years! Highly recommend the enchiladas." – Sarah M.</li>
+      <li>⭐⭐⭐⭐⭐ "Amazing flavors and great service. Will be back!" – Carlos G.</li>
+    </ul>
+  </section>
+
+  <section id="order">
+    <h3>Order Online</h3>
+    <p>Enjoy our food at home! Order through <a href="https://www.ubereats.com" target="_blank" rel="noopener">Uber Eats</a> or <a href="https://www.doordash.com" target="_blank" rel="noopener">DoorDash</a>.</p>
+  </section>
+
+  <section id="contact">
+    <h3>Contact & Location</h3>
+    <p class="contact-info">
+      1234 Main Street, Raleigh, NC 27601<br />
+      Phone: <a href="tel:+19195551234">(919) 555-1234</a><br />
+      Email: <a href="mailto:info@las-palmas-mexican-restaurant.com">info@las-palmas-mexican-restaurant.com</a><br />
+      Hours: Mon–Sun, 11am–10pm
+    </p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.830950576673!2d-78.63817828479617!3d35.77958988017539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf3707cbb29a3%3A0xd06cc74a158f32a8!2sRaleigh%2C%20NC!5e0!3m2!1sen!2sus!4v1695220000000!5m2!1sen!2sus"
+      width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Las Palmas Mexican Restaurant | Follow us on
+  <a href="#" style="color:#ffcdd2;">Facebook</a>, 
+  <a href="#" style="color:#ffcdd2;">Instagram</a>, 
+  <a href="#" style="color:#ffcdd2;">Yelp</a>
+</footer>
+</body>
+</html>
